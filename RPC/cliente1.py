@@ -9,8 +9,8 @@ if len(sys.argv) < 2:
 server = sys.argv[1]
 conn = rpyc.connect(server,18861)
 
-print(c.root)
-print(c.root.get_answer())
-print(c.root.the_real_answer_though)
+print(conn.root)
+print(conn.root.get_answer())
+print(conn.root.the_real_answer_though)
 #end = time.time()
 #print(end-start)
